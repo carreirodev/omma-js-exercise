@@ -40,7 +40,7 @@
 					</select>
 					<br />
 					<br />
-					<label for="ingredientes">Ingredientes</label>
+					<label for="ingredientes">Ingredientes (separar os ingredientes por vírgula)</label>
 					<textarea name="ingrediente" id="ingrediente"></textarea>
 					<br />
 					<label for="preparo">Preparo</label>
@@ -50,12 +50,15 @@
 					<input type="text" name="link" id="link" />
 					<br />
 					<label for="vegano">Vegano</label>
-					<label for="vegano-true">
-						<input type="radio" name="vegano" id="vegano-true" value="sim" />sim
-					</label>
-					<label for="vegano-false">
-						<input type="radio" name="vegano" id="vegano-false" value="não" checked />não
-					</label>
+					<input type="radio" name="vegano" id="vegano-true" value="sim" />sim
+					<input
+						style="display: inline"
+						type="radio"
+						name="vegano"
+						id="vegano-false"
+						value="não"
+						checked
+					/>não
 					<br />
 					<button id="btnEnviar">enviar</button>
 					<br />
