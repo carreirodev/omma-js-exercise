@@ -30,15 +30,38 @@
 					<label for="titulo">Titulo</label>
 					<input type="text" name="titulo" id="titulo" />
 					<br />
-					<label for="descricao">Descrição</label>
-					<textarea name="descricao" id="descricao"></textarea>
 					<br />
-					<label for="professor">Professor</label>
-					<input type="text" name="professor" id="professor" />
+					<label for="dificuldade">Dificuldade</label>
+					<select id="dificuldade" name="dificuldade">
+						<option value="simples">simples</option>
+						<option value="medio" selected>medio</option>
+						<option value="dificil">dificil</option>
+						<option value="chefe">chef</option>
+					</select>
+					<br />
+					<br />
+					<label for="ingredientes">Ingredientes</label>
+					<textarea name="ingrediente" id="ingrediente"></textarea>
+					<br />
+					<label for="preparo">Preparo</label>
+					<textarea name="preparo" id="preparo"></textarea>
+					<br />
+					<label for="link">Link</label>
+					<input type="text" name="link" id="link" />
+					<br />
+					<label for="vegano">Vegano</label>
+					<label for="vegano-true">
+						<input type="radio" name="vegano" id="vegano-true" value="sim" />sim
+					</label>
+					<label for="vegano-false">
+						<input type="radio" name="vegano" id="vegano-false" value="não" checked />não
+					</label>
 					<br />
 					<button id="btnEnviar">enviar</button>
+					<br />
 				</form>
 			</section>
 		</main>
+		<script src="./index.js"></script>
 	</body>
 </html>
